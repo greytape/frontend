@@ -1,0 +1,224 @@
+  html {
+    font: 16px Helvetica, Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    color: #ce4a4a;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    color: #ce4a4a;
+  }
+
+  h3 {
+   color: #ce4a4a; 
+  }
+
+  p {
+    line-height: 2rem;
+  }
+
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #999;
+  }
+
+  .dotted_box {
+    border: dashed #999 2px;
+    width: 650px;
+    margin: 45px;  
+    padding: 30px;
+  }
+
+  .anchor_margin {
+    margin: 30px;
+  }
+
+  .anchor_padding {
+    padding: 30px;
+    background-color: green;
+    color: white;
+  }
+
+  .anchor_floated {
+    float:left;
+    padding: 25px;
+    margin: 15px;
+    background-color: green;
+    color: white;
+    width: 120px;
+    box-sizing: border-box;
+  }
+
+  .block .bl-a {
+    display: block;
+    background-color: dodgerblue;
+    color: white; 
+    margin: 10px;
+    padding: 10px;
+    text-align: center; 
+  }
+
+  .in-bl .nav a {
+    display: inline-block;
+    background-color: dodgerblue;
+    color: white; 
+    margin: 20px 8px 5px;
+    padding: 20px 30px;
+    text-align: center; 
+    width: 180px;
+  }
+
+  .no_hw {
+    background-color: blue;
+    color: white;
+  }
+
+  .no_w_bh {
+    height: 60px;
+    background-color: green;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .no_h_bw {
+    width: 90px;
+    background-color: red;
+    color: white;
+  }
+
+  .hw {
+    width: 180px;
+    height: 75px;
+    margin: 2.5rem 0;
+    background-color: pink;
+    color: white;
+    box-sizing: border-box;
+  }
+
+  .text_box {
+    line-height: 1 rem;
+    color: white;
+  }
+
+  .left {
+    float: left;
+    background-color: blue;
+  }
+
+  .right {
+    float: right;
+    background-color: red;
+  }
+
+  .forty {
+    width: 40%;
+    height: 70px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .fifty {
+    width: 50%;
+    height: 70px;
+    text-align: center;
+  }
+
+  .in-bl {
+    border-bottom: 2px dashed grey;
+  }
+
+  .fl-pos h1 {
+    text-align: center;
+  }
+
+  .fl-pos wrapper div {
+    font: bold;
+    background-color: white;
+  }
+
+  .fl-pos .fl-bx1 {
+    width: 55%;
+    background-color: tomato;
+    font-weight: bold;
+    color: white;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  .fl-pos .fl-bx2 {
+    width: 45%;
+    background-color: dodgerblue;
+    font-weight: bold;
+    color: white;
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+  }
+
+
+  .fl-pos .fl-bx3 {
+    width: 100%;
+    background-color: seagreen;
+    font-weight: bold;
+    color: white;
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .fl-pos li {
+    font-style: italic;
+    line-height: 2;
+  }
+
+  .pos-fixed div {
+    background-color: dodgerblue;
+    border-radius: 10px;
+    bottom: 50px;
+    color: white;
+    left: 35px;
+    padding: 25px 35px;
+    position: fixed;
+    text-align: center;
+    width: 225px;
+  }
+
+  .pos-relative .rel-box {
+    background-color: tomato;
+    border-radius: 10px;
+    bottom: -45px;
+    color: white;
+    margin-bottom: 30px;
+    padding: 25px 35px;
+    position: relative;
+    right: 90px;
+    text-align: center;
+    width: 325px;
+  }
+
+  .pos-absolute {
+    position: relative;
+  }
+
+  .pos-absolute .abs-box1 {
+    border-radius: 10px;
+    position: absolute;
+    padding: 25px 35px;
+    color: white;
+    bottom: 100px;
+    left: 100px;
+    background-color: green;
+    top: -30px;
+    width: 200px;
+    margin-bottom: 30px;
+  } 

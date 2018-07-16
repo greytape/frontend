@@ -1,0 +1,66 @@
+body {
+  background: #322540 url("bg_body.gif"); 
+}
+
+header {
+  width: 1000px;
+  margin: 150px 200px 40px 200px;
+}
+
+header img {
+  margin: 0 auto; 
+  display: block;
+  padding-bottom: 50px;
+}
+
+main {
+  width: 1000px;
+  background-color: #ffffff;
+  margin: 0 200px;
+  overflow: hidden;
+}
+
+div > h1 {
+  font: 700 32px 'Nunito', sans-serif;
+  width: 820px;
+  margin: 100px 85px 16px 85px;
+  text-align: center;
+  white-space: pre;
+}
+
+div > p {
+  width: 820px;
+  margin: 0 85px 70px 85px;
+  font: 400 22px 'Nunito', sans-serif; 
+} 
+
+div > h2 {
+  color: #40B3C8;
+  width: 820px;
+  margin: 0 85px 20px 85px;
+  font: 700 22px 'Nunito', sans-serif; 
+  text-align: center;
+}
+
+footer {
+  background-color: #E7E7E7;
+  margin: 0 200px 170px 200px;
+  width: 1000px;
+  padding: 35px 0;
+}
+
+ul {
+  width: 515px;
+  margin: 0 auto;
+}
+
+li {
+  width: 166px;
+  display: inline-block;  
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+

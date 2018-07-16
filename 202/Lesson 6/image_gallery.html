@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>your page title goes here</title>
+  <meta charset="utf-8" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #151515;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    header {
+      padding: 35px 0 20px 0;
+    }
+
+    h1 {
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    main {
+      background-color: #333333;
+      min-width: 500px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1px;
+      box-sizing: border-box;
+    }
+
+    figcaption {
+      color: white;
+      font-size: 16px;
+    }
+
+    .main-image img {
+      background-color: white;
+      padding: 15px;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .thumbnail-gallery {
+      width: 100%;
+      display: flex;
+      align-self: start;
+    }
+
+    .thumbnail-gallery figure img {
+      max-width: 100%;
+      flex: 1;
+    }
+
+    #special {
+      flex: 2;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>
+        My Photo Gallery
+      </h1>
+    </header>
+
+    <figure class="main-image">
+      <img src="http://placehold.it/1200x900">
+      <figcaption>Example photo</figcaption>
+    </figure>
+
+    <div class="thumbnail-gallery">
+      <figure>
+        <img src="http://placehold.it/1200x900">
+      </figure>
+      <figure>
+        <img src="http://placehold.it/1200x900">
+      </figure>
+      <figure>
+        <img src="http://placehold.it/1200x900">
+      </figure>
+      <figure>
+        <img src="http://placehold.it/1200x900">
+      </figure>
+    </div>
+  </main>
+</body>
+</html>

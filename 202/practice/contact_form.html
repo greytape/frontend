@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Contact form</title>
+    <meta charset="utf-8" />
+    <style>
+    .contact_details label {
+      display: block;
+    }
+
+    dt {
+      margin: 10px 0;
+    }
+
+    dd {
+      margin: 0 0 25px 0;
+      padding: 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      height: 30px;
+      font: normal 14px Helvetica, Arial, sans-serif;
+      padding: 3 10px;
+      border: 1px solid #cecece;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: auto;
+      resize: vertical;
+    }
+
+    dt {
+      margin-bottom: 5px;
+    }
+
+    .comment * {
+      display: block;
+    }
+
+    fieldset {
+      margin: 0 auto;
+      width: 600px;
+      border: none;
+      padding: 0;
+    }
+
+    body {
+      font: 16px sans-serif;
+    }
+
+    .partial {
+      display: inline-block;
+      box-sizing: border-box;
+    }
+
+    .one_half {
+      width: 50%
+    }
+
+    .one_third {
+      width: 33.33%
+    }
+
+    .left {
+      padding-right: 5px;
+    }
+
+    .right {
+      padding-left: 5px;
+    }
+
+    .center {
+      padding: 0 2.5px;
+    }
+
+    </style>
+  </head>
+  <body>
+    <form>
+      <fieldset class="contact_details">
+        <dl class="partial one_half left">
+          <dt>
+            <label for="first_name">First name</label><!--
+          --></dt>
+          <dd>
+            <input type="text" name="first_name" id="first_name">
+          </dd>
+        </dl><!--
+        --><dl class="partial one_half right">
+          <dt>  
+            <label for="last_name">Last name</label>
+          </dt>
+          <dd>
+            <input type="text" name="last_name" id="last_name">
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            <label for="email">email</label>
+          </dt>
+          <dd>
+            <input type="email" name="email" placeholder="name@domain.com" id="email">
+          </dd>
+        </dl>
+        <dl class="partial one_third left">
+          <dt>
+            <label for="city">City</label>
+          </dt>
+          <dd>
+            <input type="text" name="city" id="city">
+          </dd>
+        </dl><!--
+        --><dl class="partial one_third center">
+          <dt>
+            <label>State</label>
+          </dt>
+          <dd>
+            <select name="state">  
+              <option>AL</option>
+              <option>AK</option>
+              <option>AR</option>  
+              <option>AZ</option>
+              <option>CA</option>
+              <option>CO</option>
+              <option>CT</option>
+              <option>DC</option>
+              <option>DE</option>
+              <option>FL</option>
+              <option>GA</option>
+              <option>HI</option>
+              <option>IA</option>  
+              <option>ID</option>
+              <option>IL</option>
+              <option>IN</option>
+              <option>KS</option>
+              <option>KY</option>
+              <option>LA</option>
+              <option>MA</option>
+              <option>MD</option>
+              <option>ME</option>
+              <option>MI</option>
+              <option>MN</option>
+              <option>MO</option>  
+              <option>MS</option>
+              <option>MT</option>
+              <option>NC</option>  
+              <option>NE</option>
+              <option>NH</option>
+              <option>NJ</option>
+              <option>NM</option>      
+              <option>NV</option>
+              <option>NY</option>
+              <option>ND</option>
+              <option>OH</option>
+              <option>OK</option>
+              <option>OR</option>
+              <option>PA</option>
+              <option>RI</option>
+              <option>SC</option>
+              <option>SD</option>
+              <option>TN</option>
+              <option>TX</option>
+              <option>UT</option>
+              <option>VT</option>
+              <option>VA</option>
+              <option>WA</option>
+              <option>WI</option>  
+              <option>WV</option>
+              <option>WY</option>
+            </select>   
+          </dd>
+        </dl><!--
+        --><dl class="partial one_third right">
+          <dt>  
+            <label>Zip code</label>
+          </dt>
+          <dd>
+            <input type="text" maxlength="5" name="zip_code">
+          </dd>
+        </dl>
+      </fieldset>
+      <fieldset class="preferences">
+        <dl>
+          <dt><label for="favourite_colour">What is your favourite colour?</label></dt> 
+          <dd>
+            <select name="favourite_colour" size="4">
+              <option>Red</option>
+              <option>Yellow</option>
+              <option>Pink</option>
+              <option>Blue</option>
+              <option>Orange</option>
+            </select>
+          </dd>
+          <dt><label for="favourite_technologies">Which web technologies do you want to learn?</label></dt> 
+          <dd>
+            <select name="favourite_technologies" size="4" multiple>
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>Javascript</option>
+              <option>Ruby</option>
+              <option>Rails</option>
+            </select>
+          </dd>
+        </dl>
+        <div class="comment">
+          <label for="comment_box">If you would like to tell us something, please do so here</label>
+          <textarea name="comment_box" rows="6" cols="80"></textarea>
+          <input type="hidden" name="timestamp" value="2018-05-13">
+          <input type="submit" value="submit">
+        </div>  
+        <select multiple>
+          <input type="text" name="profile1" />
+          <input type="text" name="profile2" />
+          <input type="text" name="profile3" />
+          <input type="text" name="profile4" />
+        </select>
+      </fieldset>
+    </form>
+  </body>
+</html>

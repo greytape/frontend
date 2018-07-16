@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>your page title goes here</title>
+    <meta charset="utf-8" />
+    <style>
+    label, 
+    input {
+      display: block;
+    }
+
+    .search_area input,
+    .search_area label {
+      display: inline-block;
+    }
+    </style>
+  </head>
+  <body>
+    <form action="#" autocomplete="off" method="post">
+      <fieldset>
+        <dl>
+          <dt><label for="first_name">First name</label></dt>
+          <dd><input required type="text" name="first_name" id="first_name"></dd>
+
+          <dt><label for="last_name">Last name</label></dt>
+          <dd><input required type="text" name="last_name" id="last_name"></dd>
+
+          <dt><label for="email">email</label></dt>
+          <dd><input required type="email" name="email" id="email" autocomplete="off" autocapitalize="none"></dd>
+
+          <dt><label for="phone_type">Phone type</label></dt>
+          <dd>
+            <select name="phone_type" id="phone_type">
+              <option value="home" selected>Home</option>
+              <option value="work">Work</option>
+              <option value="mobile">Mobile</option>
+            </select>
+          </dd>
+
+          <dt><label for="phone">Phone number</label></dt>
+          <dd><input required type="tel" name="phone" id="phone" placeholder="###-###-####"></dd>
+
+          <dt><label for="optional_message">Optional Message</label></dt>
+          <dd><textarea name="optional_message" id="optional_message" multiline cols="80" rows="6" placeholder="Type your message here."/></textarea></dd>
+
+          <input type="submit" value="Send">
+        </dl>
+      </fieldset>
+      </form>
+      <form action="#" method="post">
+        <fieldset class="search_area">
+          <label for="search_box">Search for</label>
+          <input type="text" name="search_box" id ="search_box">
+          <input type="radio" id="search_media1" name="media" value="tv">
+          <label for="search_media1">TV</label>
+          <input type="radio" id="search_media12" name="media" value="movies">
+          <label for="search_media2">Movies</label>
+          <input type="radio" id="search_media3" name="media" value="music">
+          <label for="search_media3">Music</label>
+          <input type="submit" value="Search">
+        </fieldset>
+    </form>
+    <form action="#" method="post">
+      <fieldset>
+        <dl>
+          <dt>
+            <label for="film_choice">Film</label>
+          </dt>
+          <dd>
+            <select name="film_choice" id="film_choice" size="4">
+              <option value="looper">Looper</option>
+              <option value="frozen">Frozen</option>
+              <option value="tommy_boy">Tommy Boy</option>
+              <option value="alien" selected>Alien</option>
+            </select>
+          </dd>
+          <dt><label for="film_rating">Rating</label></dt>
+          <dd><input type="number" name="film_rating" id="film_rating" value="5" min="1" max="5"></dd>
+        </dl>
+        <div>
+          <label>
+            <input type="checkbox" name="favourite" checked>Add to my favourites
+          </label>
+        </div>
+        <input type="submit" value="Rate movie" />
+      </fieldset>
+    </form>
+    <form action="#" method="get">
+      <fieldset>
+          <dl>
+            <dt><h1>Categories</h1></dt>
+            <dd>
+              <select name="Categories" size="4">
+                <option  value="core">Core</option>
+                <option  value="plugins_and_libraries">Plugins and Libraries</option>
+                <option  value="conventions">Conventions</option>
+                <option  value="reviews">Reviews</option>
+                <option  value="opinion">Opinion</option>
+                <option  value="people">People</option>
+              </select>
+            </dd>
+            <dt><h1>Tags</h1></dt>
+            <dd>
+              <select name="Tags" size="4" multiple>
+                <option  value="HTML">HTML</option>
+                <option  value="CSS">CSS</option>
+                <option  value="Javascript">Javascript</option>
+                <option  value="Ruby">Ruby</option>
+                <option  value="Rails">Rails</option>
+                <option  value="Python">Python</option>
+                <option  value="Django">Django</option>
+              </select>
+            </dd>
+        <input type="reset" value="Reset the form">
+        <input type="submit" value="Filter">
+      </fieldset>
+    </form>
+   </body>
+</html>

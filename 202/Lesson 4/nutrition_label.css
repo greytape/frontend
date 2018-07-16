@@ -1,0 +1,140 @@
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+
+  table {
+    font-family: "Helvetica Black", Helvetica, Arial, sans-serif;
+    font-size: 28px;
+  }
+
+  body {
+    width: 677px;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 8px;
+    box-sizing: border-box;
+  }
+
+  table thead th:first-child {
+    font-weight: bold;
+    font-size: 56px;
+    font-family: "Franklin Gothic Heavy", sans-serif;
+    text-align: left;
+  }
+
+  thead tr:nth-child(3) {
+    border-bottom: 30px solid black;
+  }
+
+  table:first-child thead tr:last-child {
+    border-bottom: 15px solid black;
+    border-top: 0.5px solid black;
+  }
+
+  table:first-child tbody tr td:nth-child(2),
+  table:first-child tfoot tr td:nth-child(2)  {
+    text-align: right;
+  }
+
+  table:first-child tbody tr td:nth-child(2) {
+    font-weight: 800;
+  }
+
+  table:first-child tbody tr:nth-last-child(1) td:nth-child(2),
+  table:first-child tbody tr:nth-last-child(2) td:nth-child(2),
+  table:first-child tbody tr:nth-last-child(3) td:nth-child(2),
+  table:first-child tbody tr:nth-last-child(4) td:nth-child(2) {
+    font-weight: 500;
+  }
+  
+  table:first-child tbody tr:nth-last-child(4) {
+    border-top: 15px solid black;
+  }
+
+  table:first-child tbody tr {
+    border-bottom: 0.5px solid black;
+    padding: 20px 0;
+  }
+
+  strong {
+    font-weight: 800;
+  }
+
+  tfoot {
+    font-size: 24px;
+  }
+
+  table:nth-child(2) {
+    font-size: 22px;
+  }
+
+  tbody tr th {
+    text-align: left;
+  }
+
+  table:first-child thead td {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  table:first-child td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .indent {
+    padding-left: 24px;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  table:nth-child(2) thead {
+    border-bottom: 0.5px solid black;
+  }
+
+/*  td, th {
+    border: 1px solid red;
+  }*/

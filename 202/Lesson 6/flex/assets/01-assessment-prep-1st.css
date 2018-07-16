@@ -1,0 +1,438 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/*   GLOBAL   */
+
+html {
+  line-height: 1.4;
+  font-size: 1em;
+}
+
+body {
+  font-family:'Source Sans Pro', sans-serif;
+      -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 30px;
+    color: #3399cc;
+    font-weight: 600;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #2580c2;
+}
+
+p {
+    margin: 1em 0;
+    font-weight: 100;
+}
+
+.cf:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.mcs {
+  margin: 0 auto;
+}
+
+small {
+  font-size: 80%;
+}
+
+/*   HEADER   */
+
+header {
+  background: url("bg_header.png") 0 0 no-repeat;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  z-index:11;
+}
+
+nav div {
+  max-width: 980px;
+  margin: auto;
+}
+
+nav div ul {
+  display: inline-block;
+  line-height: 80px;
+  vertical-align: top;
+}
+
+nav div ul li {
+  position: relative;
+  display: inline-block;
+  padding: 0 15px;
+  cursor: pointer;
+  overflow: hidden;
+  vertical-align: top;
+  font-weight: 400;
+}
+
+
+nav div ul li img{
+  vertical-align: middle;
+}
+
+nav div ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  font-weight: 100;
+}
+
+.social {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+}
+
+.social ul li a {
+  margin: 15px 0;
+}
+
+.social ul li a#twitter {
+  background: url("icons_social-media.png") 0 0 no-repeat;
+  width: 46px;
+  height: 46px;
+}
+
+ul li a#facebook {
+  background: url("icons_social-media.png") 0 -46px no-repeat;
+  width: 46px;
+  height: 46px;
+}
+
+.additions {
+  display: block;
+  text-align: center;
+  padding: 110px 0 144px 0;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #fff;
+}
+
+.additions img {
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+header b {
+line-height: 132px;
+vertical-align: middle;
+font-weight: bold;
+margin: 0 20px;
+}
+
+b.yellow {
+  color: #ffcc33;
+}
+
+.sign {
+  vertical-align: middle;
+}
+
+/*   MAIN   */
+
+main {
+  padding-top: 50px;
+  font-size: 1.5em;
+}
+
+.text-lead {
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1.3em;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.text-lead span {
+  display:inline-block;
+  max-width: 570px;
+  margin: 32px auto;
+}
+
+.section-header {
+  text-align: center;
+  margin: 90px 0 48px 0;
+}
+
+.section-header {
+  text-transform: uppercase;
+}
+
+.content {
+  max-width: 980px;
+  margin: 0 auto 40px auto;
+}
+
+.content h2 {
+  color: #3580C2;;
+}
+
+/*   Speakers   */
+
+.speakers > div {
+  float: left;
+  padding-left: 20px;
+}
+
+.speaker {
+  width: 50%;
+  min-width: 325px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  min-height: 175px;
+}
+
+.speaker img {
+  float: left;
+  margin-right: 16px;
+  width: 120px;
+  height: 120px;
+}
+
+.speaker h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-top: -5px;
+  color: #3580c2;
+  margin-bottom: 5px;
+}
+
+.speaker h4 {
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0;
+}
+
+.speaker h4 a {
+  color: #db3127;
+}
+
+.speaker .twitter {
+  color: #969696;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.mcs .speaker {
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+/*   WORKSHOPS   */
+
+.workshops .workshop {
+  min-height: 120px;
+  margin-bottom: 42px;
+}
+
+
+.workshop img {
+  float: left;
+  margin-right: 16px;
+  width: 120px;
+  height: 120px;
+}
+
+.workshop h3 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: -5px;
+  color: #3580c2;
+  margin-bottom: 5px;
+}
+
+.workshop h4 {
+  font-weight: 600;
+  font-size: 21px;
+  margin: 0;
+}
+
+ul.sponsors {
+  text-align: center;
+}
+
+ul.sponsors li {
+  padding-bottom: 40px;
+}
+
+ul.sponsors li.silver {
+  margin-bottom: 30px;
+  padding: 10px 15px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/*   NEWS   */
+
+.news h3 {
+  margin: 0;
+  font-size: .9em;
+}
+
+.news p {
+  margin-bottom: 60px;
+  font-size: .8em;
+}
+
+small.date {
+  font-size: .6em;
+  color: gray;
+}
+
+/*   VENUE   */
+
+.img-wrapper {
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+.full-content {
+  margin-bottom: 60px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -70px;
+}
+
+.content blockquote {
+    margin-bottom: 40px;
+    font-style: italic;
+    border-left: 4px solid #3580C2;
+    margin-left: 0;
+    padding-left: 40px;
+    font-weight: 100;
+}
+
+.content blockquote cite {
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    padding-top: 16px;
+}
+
+footer  {
+  text-align: center;
+  padding: 40px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: .8em;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+footer ul li a {
+  font-size: .8em
+}

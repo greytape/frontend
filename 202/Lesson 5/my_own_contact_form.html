@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Own Contact Form</title>
+  <meta charset="utf-8" />
+  <style>
+    body {
+      font: 16px sans-serif;
+    }
+
+    body {
+      margin: 0 auto;  
+      width: 600px;   
+    }
+
+    dd {
+      margin-left: 0;
+    }
+
+    dd, 
+    dt {
+      margin: 15px 0;
+    }
+
+    input {
+      width: 100%;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post">
+    <dl>
+      <dt>
+        <label for="first_name">First Name</label>
+      </dt>
+      <dd>
+        <input type="text" name="first_name" id="first_name">
+      </dd>
+      <dt>
+        <label for="last_name">Last Name</label>
+      </dt>
+      <dd>
+        <input type="text" name="last_name" id="last_name">
+      </dd>
+      <dt>
+        <label for="email">email</label>
+      </dt>
+      <dd>
+        <input type="email" name="email" id="email">
+      </dd>
+      <dt>
+        <label for="city">City</label>
+      </dt>
+      <dd>
+        <input type="text" name="city" id="city">
+      </dd>
+      <dt>
+        <label for="state">State</label>
+      </dt>
+      <dd>
+        <select name="state" id="state">
+          <option>AK</option>
+          <option>AL</option>
+          <option>AR</option>
+          <option>AZ</option>
+          <option>CA</option>
+          <option>CO</option>
+          <option>CT</option>
+          <option>DC</option>
+          <option>DE</option>
+          <option>FL</option>
+          <option>GA</option>
+          <option>HI</option>
+          <option>IA</option>
+          <option>ID</option>
+          <option>IL</option>
+          <option>IN</option>
+          <option>KS</option>
+          <option>KY</option>
+          <option>LA</option>
+          <option>MA</option>
+          <option>MD</option>
+          <option>ME</option>
+          <option>MI</option>
+          <option>MN</option>
+          <option>MO</option>
+          <option>MS</option>
+          <option>MT</option>
+          <option>NC</option>
+          <option>ND</option>
+          <option>NE</option>
+          <option>NH</option>
+          <option>NJ</option>
+          <option>NM</option>
+          <option>NV</option>
+          <option>NY</option>
+          <option>OH</option>
+          <option>OK</option>
+          <option>OR</option>
+          <option>PA</option>
+          <option>RI</option>
+          <option>SC</option>
+          <option>SD</option>
+          <option>TN</option>
+          <option>TX</option>
+          <option>UT</option>
+          <option>VA</option>
+          <option>VT</option>
+          <option>WA</option>
+          <option>WI</option>
+          <option>WV</option>
+          <option>WY</option>
+        </select>
+      </dd>
+      <dt>
+        <label for="zipcode">zipcode</label>
+      </dt>
+      <dd>
+        <input type="text" name="zipcode" maxlength="5" id="zipcode">
+      </dd>
+      <dt>
+        <label for="favourite_color">Which of these colors do you like best?</label>
+      </dt>
+      <dd>
+        <select name="favourite_color" id="favourite_color" required>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="orange" selected>Orange</option>
+          <option value="green">Green</option>
+          <option value="yellow">Yellow</option>
+        </select>
+      </dd>
+      <dt>
+        <label for="favourite_color">Which web technologies do you want to learn?</label>
+      </dt>
+      <dd>
+        <select name="favourite_color" id="favourite_color" required>
+          <option value="html">HTML</option>
+          <option value="Javascript">Javascript</option>
+          <option value="ruby" selected>Ruby</option>
+          <option value="rails">Rails</option>
+          <option value="css">CSS</option>
+        </select>
+      </dd>
+      <dt>
+        <label for="comments_box">Comments box</label>
+      </dt>
+      <dd>
+        <textarea name="comments_box" id="comments_box" rows="6" cols="80"></textarea>
+      </dd>
+    </dl>
+    <button>Send</button>
+    <input type="reset" value="Reset">
+    <input type="hidden" value="2018-07-02">
+  </form>
+</body>
+</html>
