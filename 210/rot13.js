@@ -30,9 +30,11 @@
 function rot13(string) {
   var returnString = '';
   var alphaRegex = /[a-zA-Z]/;
-  var upperCase = false;
-  var upperCaseLimit = 90
   var lowerCaseLimit = 122
+  var upperCaseLimit = 90
+  var ROTATOR = 13
+  var ALPHABETSIZE = 26
+
   for (var idx = 0; idx < string.length; idx++) {
     if (alphaRegex.test(string[idx]) === false) {
       returnString += string[idx];
@@ -41,31 +43,33 @@ function rot13(string) {
       var charCode = string.charCodeAt(idx);
     }
 
-    if (charCode >= 65 && charCode <= upperCaseLimit) {
-      upperCase = true;
-    }
+    var upperCase = isUpperCase(charCode);
 
-    charCode += 13;
+    charCode += ROTATOR;
 
-    if (charCode > 90 && upperCase) {
-      charcode -= 26;
-    } else if (charCode > lowerCaseLimit) {
-      charCode -= 26;
-    }
+    if (charCode > upperCaseLimit && upperCase || charCode > lowerCaseLimit) {
+      charCode -= ALPHABETSIZE;
+    } 
 
     returnString += String.fromCharCode(charCode);
   }
   return returnString;
 }
 
+function isUpperCase(charCode) {
+  return (charCode >= 65 && charCode <= 90);
+}
+
+
+
 // Tests
 
-// console.log(rot13('Teachers open the door, but you must enter by yourself.'));
+console.log(rot13(rot13('ABCDEFGHIJKLNOPQRSTUVWXYZ')));
 
 // // // logs:
 // // Grnpuref bcra gur qbbe, ohg lbh zhfg ragre ol lbhefrys.
 
-console.log(rot13(rot13('abcdefghijklmnopqrstuvwxyz.')));
+console.log(rot13(rot13('abcdefghijklmnopqrstuvwxyz')));
 
 // // logs:
 // Teachers open the door, but you must enter by yourself.
