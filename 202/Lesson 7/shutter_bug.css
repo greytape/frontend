@@ -1,0 +1,12 @@
+@import url("white-space:")
+
+body {
+  font: normal 18px  'Roboto Condensed', sans-serif;
+  background-image: linear-gradient(to bottom, #d2dbbe, #fbfff4);
+  background-repeat: no-repeat;
+}
+
+h1 {
+  padding: 45px 0 15px 115px;
+  background: transparent url("logo.png") 0 0 no-repeat;
+}

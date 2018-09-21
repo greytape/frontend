@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #151515;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  padding: 35px 0 20px 0;
+}
+
+h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+main {
+  background-color: #333333;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+figcaption {
+  color: white;
+  font-size: 16px;
+}
+
+.main-image img {
+  background-color: white;
+  padding: 15px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.thumbnail-gallery {
+  font-size: 0;
+  margin: 0 -15px;
+  padding: 0;
+}
+
+.thumbnail-gallery figure {
+  width: 25%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.thumbnail-gallery figure img {
+  max-width: 100%;
+  padding: 3px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+  .thumbnail-gallery figure {
+    width: 33.33333%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .thumbnail-gallery figure {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 100%;
+  }
+
+  .main-image {
+    float: left;
+    display: inline-block;
+    width: 950px;
+    vertical-align: top;
+    margin-right: 50px;
+  }
+
+  .main-image img {
+    max-width: 900px;
+  }
+
+  .thumbnail-gallery {
+    overflow: hidden;
+  }
+
+  .thumbnail-gallery figure {
+    width: 100%;
+  }
+}
+
