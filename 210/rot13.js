@@ -29,22 +29,19 @@
 
 function rot13(string) {
   var returnString = '';
-  var alphaRegex = /[a-zA-Z]/;
   var lowerCaseLimit = 122
   var upperCaseLimit = 90
   var ROTATOR = 13
   var ALPHABETSIZE = 26
 
   for (var idx = 0; idx < string.length; idx++) {
-    if (alphaRegex.test(string[idx]) === false) {
+    var charCode = string.charCodeAt(idx);
+    if (!isUpperCase(charCode) && isLowerCase(charCode)) {
       returnString += string[idx];
       continue;
-    } else {
-      var charCode = string.charCodeAt(idx);
-    }
+    } 
 
     var upperCase = isUpperCase(charCode);
-
     charCode += ROTATOR;
 
     if (charCode > upperCaseLimit && upperCase || charCode > lowerCaseLimit) {
@@ -57,7 +54,10 @@ function rot13(string) {
 }
 
 function isUpperCase(charCode) {
-  return (charCode >= 65 && charCode <= 90);
+  return (charCode >= 65 && charCode <= 90;
+}
+function isLowerCase(charCode) {
+  return (charCode >= 97 && charCode <= 122;
 }
 
 
