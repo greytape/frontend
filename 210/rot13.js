@@ -36,7 +36,7 @@ function rot13(string) {
 
   for (var idx = 0; idx < string.length; idx++) {
     var charCode = string.charCodeAt(idx);
-    if (!isUpperCase(charCode) && isLowerCase(charCode)) {
+    if (!isUpperCase(charCode) && !isLowerCase(charCode)) {
       returnString += string[idx];
       continue;
     } 
@@ -54,22 +54,22 @@ function rot13(string) {
 }
 
 function isUpperCase(charCode) {
-  return (charCode >= 65 && charCode <= 90;
+  return (charCode >= 65 && charCode <= 90);
 }
 function isLowerCase(charCode) {
-  return (charCode >= 97 && charCode <= 122;
+  return (charCode >= 97 && charCode <= 122);
 }
 
 
 
 // Tests
 
-console.log(rot13(rot13('ABCDEFGHIJKLNOPQRSTUVWXYZ')));
+console.log(rot13(rot13('ABCDEFGHIJK,LNOPQRSTUVWXYZ')));
 
 // // // logs:
 // // Grnpuref bcra gur qbbe, ohg lbh zhfg ragre ol lbhefrys.
 
-console.log(rot13(rot13('abcdefghijklmnopqrstuvwxyz')));
+console.log(rot13(rot13('abcdefghijkl,mnopqrstuvwxyz')));
 
 // // logs:
 // Teachers open the door, but you must enter by yourself.
